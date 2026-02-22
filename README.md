@@ -1,5 +1,5 @@
 
-# Credit Risk 
+# Credit Risk Intelligence & Profit Simulation Engine 
 
 ## Objective
 
