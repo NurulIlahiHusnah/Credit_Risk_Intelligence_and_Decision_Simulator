@@ -129,10 +129,10 @@ At this stage, I evaluated the model using two methods with the XGBoost algorith
     [[8674 1331]
      [2061 8102]]
 
-              precision    recall  f1-score   support
+               precision    recall  f1-score   support
 
-           0       0.81      0.87      0.84     10005
-           1       0.86      0.80      0.83     10163
+            0       0.81      0.87      0.84     10005
+            1       0.86      0.80      0.83     10163
 
     accuracy                            0.83     20168
     macro avg       0.83      0.83      0.83     20168
@@ -141,17 +141,20 @@ At this stage, I evaluated the model using two methods with the XGBoost algorith
 
 Confusion Matrik
 
-    [[33242     3]
-    [ 265    3098]]
+    Confusion Matrik
+    [[44587    41    64]
+    [ 2251  42536    52]
+    [    1     3  44620]]
+----------------------------------------------------------------------------
+               precision    recall  f1-score   support
 
-              precision    recall  f1-score   support
+            0       0.95      1.00      0.97     44692
+            1       1.00      0.95      0.97     44839
+            2       1.00      1.00      1.00     44624
 
-           0       0.99      1.00      1.00     33245
-           1       1.00      0.92      0.96      3363
-
-     accuracy                               0.99     36608
-     macro avg          1.00      0.96      0.98     36608
-     weighted avg       0.99      0.99      0.99     36608
+    accuracy                            0.98    134155
+    macro avg       0.98      0.98      0.98    134155
+    weighted avg    0.98      0.98      0.98    134155
 
 After conducting numerous experiments, it was discovered that utilizing the XGBoost model with K-Fold cross-validation resulted in a greater reduction in bad debts. The improvement compared to not using the model exceeded 45%.
 
